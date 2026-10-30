@@ -1,0 +1,843 @@
+
+=============================================
+     LINUX NETWORK MONITORING SYSTEM
+=============================================
+
+Date: Fri Oct 30 14:18:35 UTC 2026
+Hostname: king
+
+1. NETWORK INTERFACE AND IP ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+2. MAC ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+3. DEFAULT GATEWAY
+default via 172.20.48.1 dev eth0 proto kernel 
+
+4. INTERNET CONNECTIVITY
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=48.6 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=104 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=114 time=549 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 3 received, 25% packet loss, time 3026ms
+rtt min/avg/max/mdev = 48.606/233.818/548.978/223.990 ms
+PASS: Internet connectivity check
+
+5. DNS RESOLUTION
+2606:4700:83b5:72db:f2fe:6b3:ef6b:ff98 example.com
+PASS: DNS resolution successful
+
+6. HTTPS CONNECTIVITY
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0
+HTTP/2 200 
+date: Fri, 30 Oct 2026 14:18:40 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+last-modified: Thu, 29 Oct 2026 13:15:03 GMT
+allow: GET, HEAD
+accept-ranges: bytes
+age: 7415
+cf-cache-status: HIT
+cf-ray: a52b0cf48b607ab9-MAA
+alt-svc: h3=":443"; ma=86400
+
+PASS: HTTPS server responded
+
+7. LISTENING PORTS
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+
+8. RAM MONITORING
+               total        used        free      shared  buff/cache   available
+Mem:           3.4Gi       463Mi       2.8Gi       3.5Mi       230Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+9. DISK MONITORING
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.5G  955G   1% /
+
+10. SYSTEM UPTIME
+ 14:18:41 up  2:15,  1 user,  load average: 0.02, 0.02, 0.00
+
+========================================
+ MONITORING COMPLETED
+========================================
+
+=============================================
+     LINUX NETWORK MONITORING SYSTEM
+=============================================
+
+Date: Fri Oct 30 14:32:27 UTC 2026
+Hostname: king
+
+1. NETWORK INTERFACE AND IP ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+2. MAC ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+3. DEFAULT GATEWAY
+default via 172.20.48.1 dev eth0 proto kernel 
+
+
+4. INTERNET CONNECTIVITY
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=43.7 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=141 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=58.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=114 time=47.0 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 43.690/72.522/140.659/39.734 ms
+PASS: Internet connectivity is working
+
+5. DNS RESOLUTION
+2606:4700:9765:72db:f23b:797:ef6b:ff98 example.com
+PASS: DNS resolution successful
+
+6. HTTPS CONNECTIVITY
+HTTP/2 200 
+date: Fri, 30 Oct 2026 14:32:30 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+last-modified: Thu, 29 Oct 2026 13:15:03 GMT
+allow: GET, HEAD
+accept-ranges: bytes
+age: 8245
+cf-cache-status: HIT
+cf-ray: a52b2136e8b07fe6-MAA
+alt-svc: h3=":443"; ma=86400
+
+PASS: HTTPS server responded
+
+7. LISTENING PORTS
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+
+8. RAM MONITORING
+               total        used        free      shared  buff/cache   available
+Mem:           3.4Gi       456Mi       2.8Gi       3.5Mi       259Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+9. DISK MONITORING
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.5G  955G   1% /
+
+10. SYSTEM UPTIME
+ 14:32:31 up  2:29,  1 user,  load average: 0.00, 0.00, 0.00
+
+========================================
+ MONITORING COMPLETED
+========================================
+
+=============================================
+     LINUX NETWORK MONITORING SYSTEM
+=============================================
+
+Date: Fri Oct 30 14:40:05 UTC 2026
+Hostname: king
+
+1. NETWORK INTERFACE AND IP ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+2. MAC ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+3. DEFAULT GATEWAY
+default via 172.20.48.1 dev eth0 proto kernel 
+
+
+4. INTERNET CONNECTIVITY
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=55.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=62.9 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=51.8 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=114 time=129 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 51.792/74.777/129.057/31.591 ms
+PASS: Internet connectivity is working
+
+5. DNS RESOLUTION
+2606:4700:83b5:72db:f2fd:6b3:ef6b:ff98 example.com
+PASS: DNS resolution successful
+
+6. HTTPS CONNECTIVITY
+HTTP/2 200 
+date: Fri, 30 Oct 2026 14:40:08 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+last-modified: Thu, 29 Oct 2026 13:15:03 GMT
+allow: GET, HEAD
+accept-ranges: bytes
+age: 8703
+cf-cache-status: HIT
+cf-ray: a52b2c637a3fc043-MAA
+alt-svc: h3=":443"; ma=86400
+
+PASS: HTTPS server responded
+
+7. LISTENING PORTS
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+PASS: Listening ports checked successfully
+
+8. RAM MONITORING
+               total        used        free      shared  buff/cache   available
+Mem:           3.4Gi       461Mi       2.8Gi       3.5Mi       259Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+PASS: RAM monitoring completed
+
+9. DISK MONITORING
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.5G  955G   1% /
+PASS: Disk monitoring completed
+
+10. SYSTEM UPTIME
+ 14:40:08 up  2:36,  1 user,  load average: 0.00, 0.02, 0.00
+PASS: System uptime checked successfully
+
+========================================
+ MONITORING COMPLETED
+========================================
+
+=============================================
+     LINUX NETWORK MONITORING SYSTEM
+=============================================
+
+Date: Fri Oct 30 14:44:26 UTC 2026
+Hostname: king
+
+1. NETWORK INTERFACE AND IP ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+2. MAC ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+3. DEFAULT GATEWAY
+default via 172.20.48.1 dev eth0 proto kernel 
+
+
+4. INTERNET CONNECTIVITY
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=59.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=47.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=52.7 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 3 received, 25% packet loss, time 3006ms
+rtt min/avg/max/mdev = 46.984/53.088/59.541/5.132 ms
+WARNING: Internet connection has packet loss
+
+5. DNS RESOLUTION
+2606:4700:83b5:72db:f2fd:6b3:ef6b:ff98 example.com
+PASS: DNS resolution successful
+
+6. HTTPS CONNECTIVITY
+HTTP/2 200 
+date: Fri, 30 Oct 2026 14:44:30 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+last-modified: Thu, 29 Oct 2026 13:15:03 GMT
+allow: GET, HEAD
+accept-ranges: bytes
+age: 8965
+cf-cache-status: HIT
+cf-ray: a52b32cbeff4a911-MAA
+alt-svc: h3=":443"; ma=86400
+
+PASS: HTTPS server responded
+
+7. LISTENING PORTS
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+PASS: Listening ports checked successfully
+
+8. RAM MONITORING
+               total        used        free      shared  buff/cache   available
+Mem:           3.4Gi       462Mi       2.8Gi       3.5Mi       260Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+PASS: RAM monitoring completed
+
+9. DISK MONITORING
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.5G  955G   1% /
+PASS: Disk monitoring completed
+
+10. SYSTEM UPTIME
+ 14:44:31 up  2:41,  1 user,  load average: 0.00, 0.00, 0.00
+PASS: System uptime checked successfully
+
+========================================
+ MONITORING COMPLETED
+========================================
+
+=============================================
+     LINUX NETWORK MONITORING SYSTEM
+=============================================
+
+Date: Fri Oct 30 15:28:24 UTC 2026
+Hostname: king
+
+1. NETWORK INTERFACE AND IP ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+2. MAC ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+3. DEFAULT GATEWAY
+default via 172.20.48.1 dev eth0 proto kernel 
+
+4. INTERNET CONNECTIVITY
+Enter test IP address: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=211 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=123 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=64.0 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=114 time=49.2 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 49.168/111.586/210.644/63.431 ms
+PASS: Internet connectivity is working
+
+5. DNS RESOLUTION
+Enter domain name: 
+=============================================
+     LINUX NETWORK MONITORING SYSTEM
+=============================================
+
+Date: Fri Oct 30 15:35:37 UTC 2026
+Hostname: king
+
+1. NETWORK INTERFACE AND IP ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+2. MAC ADDRESS
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+3. DEFAULT GATEWAY
+default via 172.20.48.1 dev eth0 proto kernel 
+
+4. INTERNET CONNECTIVITY
+Enter test IP address: 
+Date: Fri Oct 30 15:59:14 UTC 2026
+Hostname: king
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: ./network.monitor.sh: line 43: check_ip: command not found
+
+Enter your choice: Date: Fri Oct 30 16:11:24 UTC 2026
+Hostname: king
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 1. NETWORK INTERFACE AND IP =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 1. NETWORK INTERFACE AND IP =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Invalid choice! Select 1 to 12.
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Invalid choice! Select 1 to 12.
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Invalid choice! Select 1 to 12.
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Invalid choice! Select 1 to 12.
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 1. NETWORK INTERFACE AND IP =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 3. DEFAULT GATEWAY =====
+default via 172.20.48.1 dev eth0 proto kernel 
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 6. HTTPS CONNECTIVITY =====
+Enter website URL: WARNING: Website URL cannot be empty
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 6. HTTPS CONNECTIVITY =====
+Enter website URL: HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-WD7eAQqtXhIs1MQB66SjNg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+date: Fri, 30 Oct 2026 16:13:01 GMT
+expires: Sun, 29 Nov 2026 16:13:01 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+PASS: HTTPS connection successful
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 8. RAM MONITORING =====
+               total        used        free      shared  buff/cache   available
+Mem:           3.4Gi       461Mi       2.8Gi       3.5Mi       271Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== 9. DISK MONITORING =====
+Enter filesystem path: Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.5G  955G   1% /
+PASS: Disk information collected
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: 
+===== RUN ALL MONITORING =====
+
+===== 1. NETWORK INTERFACE AND IP =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enx00155d2fc7e6
+    inet 172.20.59.115/20 brd 172.20.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+===== 2. MAC ADDRESS =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:15:5d:2f:c7:e6 brd ff:ff:ff:ff:ff:ff
+    altname enx00155d2fc7e6
+
+===== 3. DEFAULT GATEWAY =====
+default via 172.20.48.1 dev eth0 proto kernel 
+
+===== 4. INTERNET CONNECTIVITY =====
+Enter test IP address: PING 12 (0.0.0.12) 56(84) bytes of data.
+
+--- 12 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3078ms
+WARNING: Internet connectivity check failed
+
+===== 5. DNS RESOLUTION =====
+Enter domain name: WARNING: Domain name cannot be empty
+
+===== 6. HTTPS CONNECTIVITY =====
+Enter website URL: WARNING: Website URL cannot be empty
+
+===== 7. LISTENING PORTS =====
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+
+===== 8. RAM MONITORING =====
+               total        used        free      shared  buff/cache   available
+Mem:           3.4Gi       498Mi       2.8Gi       3.5Mi       271Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+===== 9. DISK MONITORING =====
+Enter filesystem path: WARNING: Filesystem path cannot be empty
+
+===== 10. SYSTEM UPTIME =====
+ 16:14:16 up  4:10,  1 user,  load average: 0.01, 0.03, 0.00
+
+===== ALL CHECKS COMPLETED =====
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Invalid choice! Select 1 to 12.
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Date: Fri Oct 30 16:15:50 UTC 2026
+Hostname: king
+
+======================================
+     LINUX NETWORK MONITORING SYSTEM
+======================================
+1. Network Interface and IP
+2. MAC Address
+3. Default Gateway
+4. Internet Connectivity
+5. DNS Resolution
+6. HTTPS Connectivity
+7. Listening Ports
+8. RAM Monitoring
+9. Disk Monitoring
+10. System Uptime
+11. Run All Monitoring
+12. Exit
+
+Enter your choice: Monitoring program closed
